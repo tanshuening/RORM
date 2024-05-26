@@ -8,33 +8,13 @@
     android:background="@color/veryLightOrange"
     tools:context=".SplashScreen">
 
-    <LinearLayout
-        android:id="@+id/logo"
+    <include
+        layout="@layout/layout_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/logoTable"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="logoTable"
-            android:layout_marginEnd="20dp"
-            app:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/logoText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_bhai_2_semibold"
-            android:text="| RORM"
-            android:textColor="@color/black"
-            android:textSize="54sp" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
