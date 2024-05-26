@@ -41,6 +41,7 @@
         android:text="Next"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/slogan"
         app:layout_constraintStart_toStartOf="@+id/slogan"

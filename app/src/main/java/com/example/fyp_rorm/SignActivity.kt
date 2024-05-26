@@ -18,10 +18,10 @@ class SignActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-/*        binding.signUpButton.setOnClickListener {
-            val intent = Intent(this, SignActivity::class.java)
+        binding.signUpButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-        }*/
+        }
 
         binding.alreadyAccount.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
