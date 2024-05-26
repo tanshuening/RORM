@@ -36,7 +36,7 @@
         android:layout_width="150dp"
         android:layout_height="57dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/orange_button"
         android:fontFamily="@font/roboto_bold"
         android:text="Next"
         android:textColor="@color/white"
