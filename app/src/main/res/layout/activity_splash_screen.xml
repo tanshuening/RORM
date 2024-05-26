@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightOrange"
+    android:background="@color/veryLightOrange"
     tools:context=".SplashScreen">
 
     <LinearLayout
@@ -21,9 +21,9 @@
 
         <ImageView
             android:id="@+id/logoTable"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
             android:contentDescription="logoTable"
             android:layout_marginEnd="20dp"
             app:srcCompat="@drawable/logo" />
