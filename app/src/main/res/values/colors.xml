@@ -6,4 +6,6 @@
     <color name="veryLightOrange">#ffc47a</color>
     <color name="strongOrange">#c96f00</color>
     <color name="paleOrange">#ffdeb5</color>
+    <color name="veryPaleOrange">#ffe6c7</color>
+    <color name="veryPaleOrange2">#ffdcb0</color>
 </resources>

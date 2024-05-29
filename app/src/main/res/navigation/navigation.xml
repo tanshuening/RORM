@@ -11,10 +11,10 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/cartFragment"
-        android:name="com.example.fyp_rorm.Fragment.CartFragment"
-        android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        android:id="@+id/savedFragment"
+        android:name="com.example.fyp_rorm.Fragment.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.fyp_rorm.Fragment.HistoryFragment"

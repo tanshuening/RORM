@@ -12,38 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FYPRORM"
         tools:targetApi="31">
-
+        <activity
+            android:name=".RestaurantInfo"
+            android:exported="false"
+            android:theme="@style/Theme.FYPRORM" />
         <activity
             android:name=".ChooseLocationActivity"
             android:exported="false" />
-
         <activity
             android:name=".SignActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".StartActivity"
             android:exported="false" />
-
         <activity
             android:name=".SplashScreen"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <meta-data

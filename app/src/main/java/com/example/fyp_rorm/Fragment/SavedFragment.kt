@@ -11,10 +11,10 @@ import com.example.fyp_rorm.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [CartFragment.newInstance] factory method to
+ * Use the [SavedFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CartFragment : Fragment() {
+class SavedFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -32,7 +32,7 @@ class CartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false)
+        return inflater.inflate(R.layout.fragment_saved, container, false)
     }
 /*
     companion object {
