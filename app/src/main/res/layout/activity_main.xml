@@ -30,13 +30,13 @@
         app:navGraph="@navigation/navigation" />
 
     <ImageView
-        android:id="@+id/announcement"
+        android:id="@+id/notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/annoucement" />
+        app:srcCompat="@drawable/notification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

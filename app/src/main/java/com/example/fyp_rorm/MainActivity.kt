@@ -16,20 +16,24 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding: ActivityMainBinding by lazy {
+    private lateinit var binding: ActivityMainBinding
+
+/*    private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
-    }
+    }*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-/*
-        setContentView(R.layout.activity_main)
-*/
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
         var NavController: NavController = findNavController(R.id.fragmentContainerView)
         var bottomnav = findViewById<BottomNavigationView>(R.id.navigationBar)
         bottomnav.setupWithNavController(NavController)
+
+        binding.notification.setOnClickListener {
+            val bottomSheetDialog = NotificationBottomFragment()
+            bottomSheetDialog.show(supportFragmentManager, "Test")
+        }
     }
 }
