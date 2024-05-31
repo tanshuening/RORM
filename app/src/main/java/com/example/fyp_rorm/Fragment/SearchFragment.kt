@@ -9,11 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.fyp_rorm.R
 import com.example.fyp_rorm.adapter.RecentlyViewedRestaurantAdapter
+import com.example.fyp_rorm.adapter.RestaurantAdapter
 import com.example.fyp_rorm.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding
-    private lateinit var adapter: RecentlyViewedRestaurantAdapter
+    private lateinit var adapter: RestaurantAdapter
 
     private val originalRestaurantName = listOf("iVegan", "Sando", "Colony Bakery")
     private val originalRestaurantRatings = listOf("5.0", "4.5", "4.0")
@@ -37,10 +38,10 @@ class SearchFragment : Fragment() {
     ): View? {
         binding = FragmentSearchBinding.inflate(inflater, container, false)
 
-        adapter = RecentlyViewedRestaurantAdapter(
+        adapter = RestaurantAdapter(
             filteredRestaurantName, filteredRestaurantRatings, filteredRestaurantTag, filteredRestaurantImage
         )
-        binding.restaurantRecycleView.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.restaurantRecycleView.layoutManager = GridLayoutManager(requireContext(), 3)
         binding.restaurantRecycleView.adapter = adapter
 
         // search view

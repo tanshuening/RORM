@@ -8,11 +8,11 @@
     android:elevation="5dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/recommendedRestaurant"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/restaurant"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
         app:cardCornerRadius="10dp"
@@ -46,24 +46,24 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Restaurant Name"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:paddingStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/recommendedRestaurant"
-        app:layout_constraintTop_toBottomOf="@id/recommendedRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/restaurant"
+        app:layout_constraintTop_toBottomOf="@id/restaurant"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/restaurantRatings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/star"
+        android:drawableLeft="@drawable/small_star"
         android:text="Ratings"
-        android:textSize="12sp"
+        android:textSize="10sp"
         android:paddingTop="5dp"
-        android:drawablePadding="5dp"
+        android:drawablePadding="3dp"
         android:paddingStart="4dp"
         app:layout_constraintStart_toStartOf="@+id/restaurantName"
         app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
@@ -72,11 +72,11 @@
         android:id="@+id/dot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:fontFamily="@font/roboto"
         android:text="•"
         android:paddingTop="5dp"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/restaurantRatings"
         app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
 
@@ -85,10 +85,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:text="Tag"
         android:paddingTop="5dp"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/dot"
         app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

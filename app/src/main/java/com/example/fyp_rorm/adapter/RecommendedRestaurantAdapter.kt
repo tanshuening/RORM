@@ -26,11 +26,11 @@ class RecommendedRestaurantAdapter (private val items: List<String>, private val
 
     class RecommendedRestaurantViewHolder (private val binding: RecommendedRestaurantBinding): RecyclerView.ViewHolder(binding.root) {
 
-        private val imagesView = binding.restaurantImageRecommended
+        private val imagesView = binding.restaurantImage
         fun bind(item: String, rating: String, tag: String, images: Int) {
-            binding.restaurantNameRecommended.text = item
-            binding.restaurantRatingsRecommended.text = rating
-            binding.restaurantTagRecommended.text = tag
+            binding.restaurantName.text = item
+            binding.restaurantRatings.text = rating
+            binding.restaurantTag.text = tag
             imagesView.setImageResource(images)
         }
     }
