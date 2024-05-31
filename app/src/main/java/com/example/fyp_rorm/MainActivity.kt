@@ -26,10 +26,7 @@ class MainActivity : AppCompatActivity() {
 */
 
         setContentView(binding.root)
-        val locationList: Array<String> = arrayOf("Kuala Lumpur", "Penang", "Johor", "Kelantan")
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, locationList)
-        val autoCompleteTextView: AutoCompleteTextView = binding.listOfLocation
-        autoCompleteTextView.setAdapter(adapter)
+
 
         var NavController: NavController = findNavController(R.id.fragmentContainerView)
         var bottomnav = findViewById<BottomNavigationView>(R.id.navigationBar)

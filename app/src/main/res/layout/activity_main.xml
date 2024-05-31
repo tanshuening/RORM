@@ -21,66 +21,37 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="34dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Explore Your Favourite Restaurant"
-        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/outline_table_bar_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/baloo_bhai_2_semibold"
+        android:text="RORM"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/spinnerLocation"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="80dp"
-        android:elevation="5dp"
-        android:padding="5dp"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconDrawable="@drawable/arrow_down"
-        app:endIconTint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <AutoCompleteTextView
-            android:id="@+id/listOfLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:drawablePadding="20dp"
-            android:fontFamily="@font/roboto_medium"
-            android:inputType="none"
-            android:paddingEnd="20dp"
-            android:text="Choose Location"
-            android:textSize="18sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <ImageView
         android:id="@+id/announcement"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/title"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/notification" />
+        app:srcCompat="@drawable/outline_notifications_active_24" />
 
     <fragment
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/navigationBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerLocation"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:navGraph="@navigation/navigation" />
 
 
