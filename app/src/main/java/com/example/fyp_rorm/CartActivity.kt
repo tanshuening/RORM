@@ -28,6 +28,7 @@ class CartActivity : AppCompatActivity() {
         binding.cartRestaurantRecycleView.layoutManager = LinearLayoutManager(this)
         binding.cartRestaurantRecycleView.adapter = adapter
 
+
         // Set an OnClickListener on the backButton
         binding.actionBar.root.findViewById<ImageView>(R.id.backButton).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -35,5 +36,6 @@ class CartActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finish()  // Optional: Finish the current activity
         }
+
     }
 }

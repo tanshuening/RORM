@@ -10,7 +10,7 @@
     tools:context=".CheckOutActivity">
 
     <ImageButton
-        android:id="@+id/backButton2"
+        android:id="@+id/backButton3"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
         android:layout_marginTop="50dp">
 
         <TextView
-            android:id="@+id/restaurantNameCheckout"
+            android:id="@+id/cuisineNameCheckout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
