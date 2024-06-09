@@ -1,4 +1,4 @@
-package com.example.fyp_rorm.Fragment
+package com.example.fyp_rorm.FragmentMain
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.fyp_rorm.R
-import com.example.fyp_rorm.adapter.RecentlyViewedRestaurantAdapter
 import com.example.fyp_rorm.adapter.RestaurantAdapter
 import com.example.fyp_rorm.databinding.FragmentSearchBinding
 

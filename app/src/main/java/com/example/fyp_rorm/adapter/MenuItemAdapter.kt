@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fyp_rorm.databinding.RestaurantMenuBinding
 
 class MenuItemAdapter(
-    private val menuNames: List<String>,
-    private val images: List<Int>,
-    private val prices: List<String>
+    private val menuNames: ArrayList<String>,
+    private val images: ArrayList<Int>,
+    private val prices: ArrayList<String>
 ) : RecyclerView.Adapter<MenuItemAdapter.MenuItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuItemViewHolder {

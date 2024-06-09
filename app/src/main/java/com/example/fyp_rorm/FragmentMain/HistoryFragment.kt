@@ -1,4 +1,4 @@
-package com.example.fyp_rorm.Fragment
+package com.example.fyp_rorm.FragmentMain
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -54,4 +54,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation ("androidx.appcompat:appcompat:1.3.1")
+    implementation ("com.google.android.material:material:1.5.0")
+    implementation ("androidx.core:core-ktx:1.6.0")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
 }
