@@ -3,7 +3,7 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.PastReservationBinding
+import com.example.fyp_rorm.databinding.CardViewPastReservationBinding
 
 class PastReservationAdapter(private val pastReservationRestaurantName: ArrayList<String>,
                              private val pastReservationRestaurantRatings: ArrayList<String>,
@@ -16,12 +16,12 @@ class PastReservationAdapter(private val pastReservationRestaurantName: ArrayLis
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PastReservationViewHolder {
-        val binding = PastReservationBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CardViewPastReservationBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PastReservationViewHolder(binding)
     }
 
     override fun getItemCount(): Int = pastReservationRestaurantName.size
-    class PastReservationViewHolder(private val binding:PastReservationBinding): RecyclerView.ViewHolder
+    class PastReservationViewHolder(private val binding:CardViewPastReservationBinding): RecyclerView.ViewHolder
         (binding.root){
             fun bind(pastReservationRestaurantName: String, pastReservationRestaurantRatings: String, pastReservationRestaurantTag: String, pastReservationRestaurantImage: Int){
                 binding.restaurantName.text = pastReservationRestaurantName

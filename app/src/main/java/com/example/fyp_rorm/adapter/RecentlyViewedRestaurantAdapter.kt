@@ -3,13 +3,13 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.RecentlyViewedRestaurantBinding
+import com.example.fyp_rorm.databinding.CardViewRecentlyViewedRestaurantBinding
 
 class RecentlyViewedRestaurantAdapter (private val items: List<String>, private val ratings: List<String>,
                                        private val tag: List<String>, private val image:List<Int>): RecyclerView.Adapter<RecentlyViewedRestaurantAdapter.RecentlyViewedViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecentlyViewedViewHolder {
-        return RecentlyViewedViewHolder(RecentlyViewedRestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return RecentlyViewedViewHolder(CardViewRecentlyViewedRestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: RecentlyViewedViewHolder, position: Int) {
@@ -24,7 +24,7 @@ class RecentlyViewedRestaurantAdapter (private val items: List<String>, private 
         return items.size
     }
 
-    class RecentlyViewedViewHolder (private val binding: RecentlyViewedRestaurantBinding): RecyclerView.ViewHolder(binding.root) {
+    class RecentlyViewedViewHolder (private val binding: CardViewRecentlyViewedRestaurantBinding): RecyclerView.ViewHolder(binding.root) {
 
         private val imagesView = binding.restaurantImage
         fun bind(item: String, rating: String, tag: String, images: Int) {

@@ -29,14 +29,45 @@ class MenuFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        val menuItemName = arrayListOf("Pizza", "Burger", "Pasta", "Pizza", "Burger", "Pasta", "Pizza", "Burger", "Pasta")
-        val menuItemPrice = arrayListOf("10.00", "15.00", "20.00", "10.00", "15.00", "20.00", "10.00", "15.00", "20.00")
-        val menuItemImage = arrayListOf(R.drawable.pizza, R.drawable.burger, R.drawable.noodle, R.drawable.pizza, R.drawable.burger, R.drawable.noodle, R.drawable.pizza, R.drawable.burger, R.drawable.noodle)
+        val menuItemName = arrayListOf(
+            "Pizza",
+            "Burger",
+            "Pasta",
+            "Pizza",
+            "Burger",
+            "Pasta",
+            "Pizza",
+            "Burger",
+            "Pasta"
+        )
+        val menuItemPrice = arrayListOf(
+            "10.00",
+            "15.00",
+            "20.00",
+            "10.00",
+            "15.00",
+            "20.00",
+            "10.00",
+            "15.00",
+            "20.00"
+        )
+        val menuItemImage = arrayListOf(
+            R.drawable.pizza,
+            R.drawable.burger,
+            R.drawable.noodle,
+            R.drawable.pizza,
+            R.drawable.burger,
+            R.drawable.noodle,
+            R.drawable.pizza,
+            R.drawable.burger,
+            R.drawable.noodle
+        )
 
         menuItemAdapter = MenuItemAdapter(menuItemName, menuItemImage, menuItemPrice)
 
-        binding.menuItemRecycleView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-        binding.menuItemRecycleView.adapter = menuItemAdapter
+        binding.menuItemRecyclerView.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        binding.menuItemRecyclerView.adapter = menuItemAdapter
     }
 
     companion object {

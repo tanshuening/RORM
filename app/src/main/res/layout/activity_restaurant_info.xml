@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:id="@+id/drawer_layout" >
 
-    <include layout="@layout/restaurant_info_tab_layout"/>
+    <include layout="@layout/layout_restaurant_info_tab_layout"/>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"

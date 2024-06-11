@@ -3,7 +3,7 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.BrowseByCuisineBinding
+import com.example.fyp_rorm.databinding.CardViewBrowseByCuisineBinding
 
 class BrowseByCuisineAdapter(
     private val cuisines: List<String>,
@@ -11,7 +11,7 @@ class BrowseByCuisineAdapter(
 ) : RecyclerView.Adapter<BrowseByCuisineAdapter.BrowseByCuisineViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BrowseByCuisineViewHolder {
-        val binding = BrowseByCuisineBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CardViewBrowseByCuisineBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return BrowseByCuisineViewHolder(binding)
     }
 
@@ -25,7 +25,7 @@ class BrowseByCuisineAdapter(
         return cuisines.size
     }
 
-    class BrowseByCuisineViewHolder(private val binding: BrowseByCuisineBinding) :
+    class BrowseByCuisineViewHolder(private val binding: CardViewBrowseByCuisineBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(cuisine: String, image: Int) {

@@ -37,7 +37,7 @@
                         app:iss_text_align="CENTER" />
                 </androidx.cardview.widget.CardView>
 
-                <include layout="@layout/restaurant_info_details"/>
+                <include layout="@layout/layout_restaurant_info_details"/>
             </LinearLayout>
 
             <androidx.appcompat.widget.Toolbar

@@ -3,13 +3,13 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.RestaurantBinding
+import com.example.fyp_rorm.databinding.CardViewRestaurantBinding
 
 class RestaurantAdapter (private val items: List<String>, private val ratings: List<String>,
                                        private val tag: List<String>, private val image:List<Int>): RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
-        return RestaurantViewHolder(RestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return RestaurantViewHolder(CardViewRestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
@@ -24,7 +24,7 @@ class RestaurantAdapter (private val items: List<String>, private val ratings: L
         return items.size
     }
 
-    class RestaurantViewHolder (private val binding: RestaurantBinding): RecyclerView.ViewHolder(binding.root) {
+    class RestaurantViewHolder (private val binding: CardViewRestaurantBinding): RecyclerView.ViewHolder(binding.root) {
 
         private val imagesView = binding.restaurantImage
         fun bind(item: String, rating: String, tag: String, images: Int) {

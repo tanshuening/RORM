@@ -3,7 +3,7 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.RestaurantMenuBinding
+import com.example.fyp_rorm.databinding.CardViewRestaurantMenuBinding
 
 class MenuItemAdapter(
     private val menuNames: ArrayList<String>,
@@ -12,7 +12,7 @@ class MenuItemAdapter(
 ) : RecyclerView.Adapter<MenuItemAdapter.MenuItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuItemViewHolder {
-        val binding = RestaurantMenuBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CardViewRestaurantMenuBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MenuItemViewHolder(binding)
     }
 
@@ -27,7 +27,7 @@ class MenuItemAdapter(
         return menuNames.size
     }
 
-    class MenuItemViewHolder(private val binding: RestaurantMenuBinding) :
+    class MenuItemViewHolder(private val binding: CardViewRestaurantMenuBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(menuName: String, image: Int, price: String) {

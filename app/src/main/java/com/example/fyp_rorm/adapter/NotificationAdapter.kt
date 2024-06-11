@@ -3,7 +3,7 @@ package com.example.fyp_rorm.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fyp_rorm.databinding.NotificationItemBinding
+import com.example.fyp_rorm.databinding.CardViewNotificationItemBinding
 
 class NotificationAdapter(
     private var notifications: ArrayList<String>,
@@ -11,7 +11,7 @@ class NotificationAdapter(
 ) : RecyclerView.Adapter<NotificationAdapter.NotificationViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotificationViewHolder {
-        val binding = NotificationItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CardViewNotificationItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NotificationViewHolder(binding)
     }
 
@@ -21,7 +21,7 @@ class NotificationAdapter(
 
     override fun getItemCount(): Int = notifications.size
 
-    inner class NotificationViewHolder(private val binding: NotificationItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class NotificationViewHolder(private val binding: CardViewNotificationItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(position: Int) {
             binding.apply {
                 notificationTextView.text = notifications[position]
